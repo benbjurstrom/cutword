@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CutWord – Rough Cuts, Instantly</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" type="image/png" href="cutword.png" />
+    </head>
+    <body class="mx-auto max-w-6xl bg-gray-900 text-white">
+        <!-- Navbar -->
+        <header class="sticky top-0 z-50 border-b border-gray-800 bg-gray-900">
+            <div
+                class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4"
+            >
+                <div class="flex items-center gap-2 text-white">
+                    <svg
+                        height="36"
+                        viewBox="0 0 389 364"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M148.169 248.299C152.503 244.041 154.919 238.882 156.73 233.159C160.743 220.471 162.566 206.742 164.629 193.632C168.637 168.153 171.513 142.404 174.951 116.833C177.577 97.297 180.148 77.349 185.876 58.427C189.217 47.391 194.36 35.37 205.184 29.869C211.991 26.409 221.605 25.682 228.809 28.295C238.53 31.822 243.514 42.574 246.758 51.631C253.48 70.398 255.707 91.305 258.136 111.041C260.024 125.867 261.761 140.711 263.347 155.573L272.661 233.979C274.111 246.452 277.435 278.426 282.789 288.601C283.374 289.713 283.685 290.2 284.932 290.549C287.87 288.408 289.299 282.072 290.286 278.644C293.606 267.12 295.787 255.443 297.637 243.603C300.713 223.921 304.628 172.244 316.881 158.228C320.079 154.57 325.557 152.231 330.384 152.178C343.501 152.034 353.17 166.388 361.527 174.806C361.369 187.288 361.349 199.77 361.467 212.251C349.828 209.845 345.784 204.774 337.637 196.76C332.517 207.183 331.439 220.55 329.711 231.934C327.395 247.411 324.903 262.859 322.236 278.278C319.894 292.153 318.021 307.232 312.663 320.323C310.698 325.123 307.628 330.048 303.785 333.573C303.444 333.883 303.096 334.184 302.742 334.477C302.386 334.77 302.024 335.054 301.655 335.329C301.286 335.604 300.911 335.87 300.529 336.127C300.147 336.384 299.758 336.632 299.364 336.869C298.97 337.107 298.57 337.335 298.165 337.554C297.759 337.772 297.349 337.98 296.934 338.179C296.518 338.377 296.098 338.565 295.674 338.743C295.249 338.92 294.82 339.087 294.388 339.244C293.954 339.401 293.518 339.548 293.078 339.683C292.638 339.818 292.195 339.943 291.749 340.057C291.303 340.17 290.854 340.273 290.404 340.365C289.952 340.457 289.499 340.538 289.044 340.608C288.589 340.677 288.133 340.736 287.675 340.783C287.217 340.83 286.758 340.867 286.298 340.892C285.838 340.917 285.378 340.93 284.918 340.933C284.458 340.936 283.998 340.927 283.538 340.907C273.235 340.446 265.757 334.204 260.959 325.523C251.047 307.59 248.463 274.681 245.641 254.102C241.755 226.165 238.078 198.199 234.612 170.206C231.698 145.754 229.492 120.866 224.556 96.731C223.305 90.615 221.801 80.939 217.507 76.221L216.616 76.438C207.467 88.564 202.955 136.082 200.699 152.69C198.83 166.623 196.853 180.54 194.767 194.442C191.552 215.467 188.28 236.872 182.882 257.458C179.922 268.749 175.382 285.888 164.401 291.978C157.128 296.012 143.768 295.933 135.953 293.52C129.985 291.676 125.767 287.151 122.6 281.956C109.412 260.316 101.284 203.126 96.6958 176.641C94.8018 165.713 93.1548 150.313 88.0218 140.541C87.9298 140.366 87.8338 140.193 87.7398 140.019C81.0588 159.478 78.2108 181.052 64.4558 197.319C57.0858 206.034 45.5218 211.412 34.1918 212.315C25.0388 213.045 11.4708 214.291 4.2508 207.755C1.5758 205.333 0.137809 202.162 0.0108092 198.562C-0.134191 194.478 1.17778 189.916 4.05878 186.929C9.89178 180.883 19.3308 182.742 26.8718 182.37C31.5818 182.138 36.1228 180.77 39.6088 177.478C54.9198 163.019 52.7068 120.276 69.6708 101.893C74.5768 96.577 80.3978 93.506 87.7138 93.293C134.309 91.937 122.293 224.144 148.169 248.299Z"
+                            fill="#F0F0EF"
+                        ></path>
+                        <path
+                            d="M361.581 60.599L361.527 175.806C361.369 188.287 361.349 200.769 361.467 213.251L361.58 309.231L361.565 335.18C361.512 340.246 361.03 345.658 361.663 350.685C362.105 354.193 363.28 357.524 365.814 360.073C368.427 362.701 372.312 363.96 375.972 363.821C379.477 363.689 382.907 361.652 385.2 359.048C387.315 356.648 387.972 353.593 388.287 350.494C388.782 345.624 388.445 340.481 388.411 335.582C388.321 326.746 388.291 317.91 388.322 309.073L388.319 183.446L388.367 70.121L388.376 32.767C388.376 25.718 388.784 18.396 387.997 11.397C387.681 8.58204 386.782 6.07301 384.873 3.93701C382.504 1.28601 379.158 0.0590242 375.652 0.00302424C372.159 -0.0529758 368.32 0.65601 365.753 3.19501C363.227 5.69301 362.127 9.21302 361.689 12.657C360.995 18.117 361.549 23.989 361.568 29.498L361.581 60.599Z"
+                            fill="#4CB3B5"
+                        ></path>
+                    </svg>
+                    <span class="text-2xl font-bold">CutWord</span>
+                </div>
+                <nav class="hidden gap-6 text-sm md:flex">
+                    <a href="#features" class="hover:text-cyan-400">Features</a>
+                    <a href="#howitworks" class="hover:text-cyan-400">
+                        How It Works
+                    </a>
+                    <a href="#faq" class="hover:text-cyan-400">FAQ</a>
+                </nav>
+                <a
+                    href="#download"
+                    class="rounded-lg bg-cyan-400 px-4 py-2 font-medium text-gray-900 hover:bg-cyan-300"
+                >
+                    Download Now
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="px-6 py-24 text-center">
+            <div
+                class="mx-[-15px] !mb-5 !mt-[-50px] flex flex-wrap items-center lg:mx-[-20px] xl:mx-[-35px]"
+            >
+                <div
+                    class="order-2 !mt-[50px] w-full max-w-full flex-[0_0_auto] !px-[15px] text-center md:!ml-[8.33333333%] md:w-10/12 lg:!order-none lg:!ml-0 lg:w-5/12 lg:!px-[20px] lg:text-left xl:!order-none xl:!ml-0 xl:w-5/12 xl:!px-[35px] xl:text-left"
+                >
+                    <h1
+                        class="!mb-5 !text-[calc(1.375rem_+_1.5vw)] font-bold !leading-[1.2] text-white md:mx-[-1.25rem] lg:mx-0 xl:mx-0 xl:!text-[2.4rem]"
+                    >
+                        Edit While You Shoot
+                    </h1>
+                    <p
+                        class="lead !mb-7 !text-[1.05rem] font-medium !leading-[1.6] text-gray-200"
+                    >
+                        Commands spoken during recording are transformed into
+                        instant timeline edits for Final Cut Pro and DaVinci
+                        Resolve.
+                    </p>
+                    <div
+                        class="flex justify-center lg:!justify-start xl:!justify-start"
+                    >
+                        <a
+                            href="#download"
+                            class="rounded-lg bg-cyan-400 px-4 py-2.5 font-medium text-gray-900 hover:bg-cyan-300"
+                        >
+                            Download for MacOS →
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="!mt-[50px] w-full max-w-full flex-[0_0_auto] !px-[15px] lg:w-7/12 lg:!px-[20px] xl:w-7/12 xl:!px-[35px]"
+                >
+                    <img
+                        alt="image"
+                        loading="lazy"
+                        width="800"
+                        height="499"
+                        decoding="async"
+                        data-nimg="1"
+                        class="w-auto"
+                        src="https://placehold.co/800x499"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="features" class="bg-gray-800 px-6 py-20">
+            <div class="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
+                <div>
+                    <h2 class="mb-6 text-3xl font-bold">
+                        Why Creators Love CutWord
+                    </h2>
+                    <ul class="space-y-4 text-gray-300">
+                        <li>
+                            ✅ Save hours of editing by skipping bad takes
+                            automatically
+                        </li>
+                        <li>
+                            ✅ Export directly to Final Cut Pro and DaVinci
+                            Resolve
+                        </li>
+                        <li>
+                            ✅ Customize your IN/OUT command words to fit your
+                            workflow
+                        </li>
+                        <li>
+                            ✅ Real-time preview and timeline adjustments before
+                            export
+                        </li>
+                        <li>
+                            ✅
+                            <strong>Works Offline & Privately</strong>
+                            : Leveraging the power of WhisperKit and Core ML,
+                            all transcription and processing happen securely on
+                            your Mac. No internet connection required after
+                            setup, and your content stays private.
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-lg bg-gray-700 p-6 text-sm text-gray-200">
+                    <h3 class="mb-4 text-xl font-semibold">How It Works</h3>
+                    <ol class="list-decimal space-y-2 pl-5">
+                        <li>Record your video while speaking command words</li>
+                        <li>
+                            Import into CutWord and let it transcribe your audio
+                        </li>
+                        <li>Markers are detected automatically</li>
+                        <li>Refine or override markers in the UI</li>
+                        <li>Export an editable timeline to your NLE</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="px-6 py-20">
+            <div class="mx-auto max-w-4xl text-center">
+                <h2 class="mb-12 text-3xl font-bold">
+                    What Creators Are Saying
+                </h2>
+                <div class="grid gap-8 text-gray-300 md:grid-cols-2">
+                    <blockquote>
+                        "CutWord has literally halved my editing time! It's a
+                        game-changer."
+                        <br />
+                        <span class="text-cyan-400">
+                            &mdash; Alex T., Tech YouTuber
+                        </span>
+                    </blockquote>
+                    <blockquote>
+                        "Being able to get a rough edit right after filming is
+                        incredible. Highly recommended!"
+                        <br />
+                        <span class="text-cyan-400">
+                            &mdash; Jess M., Content Creator
+                        </span>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="bg-gray-800 px-6 py-20">
+            <div class="mx-auto max-w-4xl">
+                <h2 class="mb-10 text-center text-3xl font-bold">
+                    Frequently Asked Questions
+                </h2>
+                <div class="space-y-6 text-gray-300">
+                    <div>
+                        <strong>
+                            Can I use CutWord with any video editor?
+                        </strong>
+                        <p>
+                            Currently supports Final Cut Pro and DaVinci
+                            Resolve. More coming soon.
+                        </p>
+                    </div>
+                    <div>
+                        <strong>Is my media altered?</strong>
+                        <p>
+                            No. CutWord only exports metadata. Your original
+                            video is untouched.
+                        </p>
+                    </div>
+                    <div>
+                        <strong>Can I customize command words?</strong>
+                        <p>
+                            Yes, you can edit your IN/OUT phrases in the
+                            settings menu.
+                        </p>
+                    </div>
+                    <div>
+                        <strong>
+                            Does it support variable frame rate recordings?
+                        </strong>
+                        <p>
+                            Yes. We account for frame-rate and round where
+                            needed for NLE compatibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section id="download" class="py-20 text-center">
+            <h2 class="mb-6 text-4xl font-bold">Ready to Save Time Editing?</h2>
+            <a
+                href="#"
+                class="rounded-lg bg-cyan-400 px-8 py-4 text-xl font-semibold text-gray-900 hover:bg-cyan-300"
+            >
+                Get CutWord for Free
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="border-t border-gray-800 bg-gray-900 py-10 text-sm text-gray-500"
+        >
+            <div
+                class="mx-auto flex max-w-6xl flex-col justify-between gap-6 px-6 md:flex-row"
+            >
+                <div class="flex items-center gap-3">
+                    <img src="cutword.png" class="h-6 w-6" />
+                    <span>© 2025 CutWord. All rights reserved.</span>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
