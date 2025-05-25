@@ -3,17 +3,61 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CutWord – Rough Cuts, Instantly</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="icon" type="image/png" href="cutword.png" />
+        <title>CutWord – Edit while you shoot.</title>
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="CutWord – Rough Cuts, Instantly" />
+        <meta
+            name="description"
+            content="Cutword is a Mac app that transforms commands spoken during recording into instant timeline edits for Final Cut Pro and DaVinci Resolve."
+        />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://cutword.com" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./cutword.webp" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cutword.com" />
+        <meta property="og:title" content="CutWord – Edit while you shoot." />
+        <meta
+            property="og:description"
+            content="Cutword is a Mac app that transforms commands spoken during recording into instant timeline edits for Final Cut Pro and DaVinci Resolve."
+        />
+        <meta property="og:image" content="./ogimage.webp" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://cutword.com" />
+        <meta
+            property="twitter:title"
+            content="CutWord – Edit while you shoot."
+        />
+        <meta
+            property="twitter:description"
+            content="Edit while you shoot. Commands spoken during recording are transformed into instant timeline edits for Final Cut Pro and DaVinci Resolve."
+        />
+        <meta property="twitter:image" content="./ogimage.webp" />
+
+        <link href="./app.css" rel="stylesheet" />
+
+        <meta name="theme-color" content="#0f172a" />
+        <link rel="icon" href="./favicon.ico" sizes="32x32" />
+        <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+        <!-- 180×180 -->
     </head>
-    <body class="mx-auto max-w-6xl bg-gray-900 text-white">
+    <body
+        class="font-manrope mx-auto max-w-7xl bg-slate-900 px-4 text-white antialiased lg:subpixel-antialiased"
+    >
         <!-- Navbar -->
-        <header class="sticky top-0 z-50 border-b border-gray-800 bg-gray-900">
+        <header class="sticky top-0 z-50 bg-slate-900">
             <div
-                class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4"
+                class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6"
             >
-                <div class="flex items-center gap-2 text-white">
+                <a href="/" class="flex items-center gap-2 text-white">
                     <svg
                         height="36"
                         viewBox="0 0 389 364"
@@ -29,9 +73,9 @@
                             fill="#4CB3B5"
                         ></path>
                     </svg>
-                    <span class="text-2xl font-bold">CutWord</span>
-                </div>
-                <nav class="hidden gap-6 text-sm md:flex">
+                    <span class="text-3xl font-extrabold">CutWord</span>
+                </a>
+                <nav class="hidden gap-6 md:flex">
                     <a href="#features" class="hover:text-cyan-400">Features</a>
                     <a href="#howitworks" class="hover:text-cyan-400">
                         How It Works
@@ -39,29 +83,28 @@
                     <a href="#faq" class="hover:text-cyan-400">FAQ</a>
                 </nav>
                 <a
-                    href="#download"
-                    class="rounded-lg bg-cyan-400 px-4 py-2 font-medium text-gray-900 hover:bg-cyan-300"
+                    href="https://testflight.apple.com/join/2BdJhDUc"
+                    target="_blank"
+                    class="hidden gap-6 rounded-lg bg-cyan-400 px-4 py-2.5 font-semibold text-gray-900 hover:bg-cyan-300 md:flex"
                 >
-                    Download Now
+                    Download For MacOS
                 </a>
             </div>
         </header>
 
         <!-- Hero -->
-        <section class="px-6 py-24 text-center">
-            <div
-                class="mx-[-15px] !mb-5 !mt-[-50px] flex flex-wrap items-center lg:mx-[-20px] xl:mx-[-35px]"
-            >
+        <section class="px-6 pt-10 pb-20 text-center">
+            <div class="grid grid-cols-12 items-center gap-8">
                 <div
-                    class="order-2 !mt-[50px] w-full max-w-full flex-[0_0_auto] !px-[15px] text-center md:!ml-[8.33333333%] md:w-10/12 lg:!order-none lg:!ml-0 lg:w-5/12 lg:!px-[20px] lg:text-left xl:!order-none xl:!ml-0 xl:w-5/12 xl:!px-[35px] xl:text-left"
+                    class="order-2 col-span-12 flex max-w-full flex-col items-center text-center lg:order-none lg:col-span-5 lg:items-start lg:text-left xl:text-left"
                 >
                     <h1
-                        class="!mb-5 !text-[calc(1.375rem_+_1.5vw)] font-bold !leading-[1.2] text-white md:mx-[-1.25rem] lg:mx-0 xl:mx-0 xl:!text-[2.4rem]"
+                        class="mb-5 text-3xl leading-[1.2] font-bold text-white lg:text-5xl"
                     >
                         Edit While You Shoot
                     </h1>
                     <p
-                        class="lead !mb-7 !text-[1.05rem] font-medium !leading-[1.6] text-gray-200"
+                        class="mb-7 max-w-xl text-xl leading-8 font-normal text-gray-200"
                     >
                         Commands spoken during recording are transformed into
                         instant timeline edits for Final Cut Pro and DaVinci
@@ -71,144 +114,356 @@
                         class="flex justify-center lg:!justify-start xl:!justify-start"
                     >
                         <a
-                            href="#download"
-                            class="rounded-lg bg-cyan-400 px-4 py-2.5 font-medium text-gray-900 hover:bg-cyan-300"
+                            target="_blank"
+                            href="https://testflight.apple.com/join/2BdJhDUc"
+                            class="rounded-lg bg-cyan-400 px-4 py-3 font-semibold text-slate-900 hover:bg-cyan-300"
                         >
                             Download for MacOS →
                         </a>
                     </div>
                 </div>
                 <div
-                    class="!mt-[50px] w-full max-w-full flex-[0_0_auto] !px-[15px] lg:w-7/12 lg:!px-[20px] xl:w-7/12 xl:!px-[35px]"
+                    class="col-span-12 flex w-full justify-center lg:col-span-7"
                 >
                     <img
-                        alt="image"
-                        loading="lazy"
-                        width="800"
-                        height="499"
+                        alt="Screenshot of CutWord Mac App"
+                        loading="eager"
+                        width="1600"
+                        height="900"
                         decoding="async"
                         data-nimg="1"
-                        class="w-auto"
-                        src="https://placehold.co/800x499"
+                        src="./hero.webp"
+                        sizes="(min-width: 1024px) 32rem, 16rem"
+                        srcset="
+                            img/hero-340w.webp   340w,
+                            img/hero-480w.webp   480w,
+                            img/hero-640w.webp   640w,
+                            img/hero-768w.webp   768w,
+                            img/hero-960w.webp   960w,
+                            img/hero-1536w.webp 1536w
+                        "
                     />
                 </div>
             </div>
         </section>
 
-        <!-- Benefits -->
-        <section id="features" class="bg-gray-800 px-6 py-20">
-            <div class="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
-                <div>
-                    <h2 class="mb-6 text-3xl font-bold">
-                        Why Creators Love CutWord
-                    </h2>
-                    <ul class="space-y-4 text-gray-300">
-                        <li>
-                            ✅ Save hours of editing by skipping bad takes
-                            automatically
-                        </li>
-                        <li>
-                            ✅ Export directly to Final Cut Pro and DaVinci
-                            Resolve
-                        </li>
-                        <li>
-                            ✅ Customize your IN/OUT command words to fit your
-                            workflow
-                        </li>
-                        <li>
-                            ✅ Real-time preview and timeline adjustments before
-                            export
-                        </li>
-                        <li>
-                            ✅
-                            <strong>Works Offline & Privately</strong>
-                            : Leveraging the power of WhisperKit and Core ML,
-                            all transcription and processing happen securely on
-                            your Mac. No internet connection required after
-                            setup, and your content stays private.
-                        </li>
-                    </ul>
+        <!-- Features -->
+        <section id="features" class="px-6 pb-24">
+            <div
+                class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:gap-8 xl:grid-cols-4"
+            >
+                <div class="">
+                    <div
+                        class="relative flex h-full min-w-0 flex-col rounded-xl border border-b-[6px] border-b-cyan-500 bg-white break-words shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                        <div class="flex-[1_1_auto] p-10">
+                            <svg
+                                class="text-yellow mb-3 size-8 text-cyan-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                                ></path>
+                            </svg>
+                            <h4 class="mb-2 text-xl font-medium text-slate-900">
+                                Lightning-Fast Edits
+                            </h4>
+                            <p class="mb-2 leading-7 text-gray-600">
+                                Speak commands like "new take" and "save take"
+                                to mark perfect edits instantly during
+                                recording.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-lg bg-gray-700 p-6 text-sm text-gray-200">
-                    <h3 class="mb-4 text-xl font-semibold">How It Works</h3>
-                    <ol class="list-decimal space-y-2 pl-5">
-                        <li>Record your video while speaking command words</li>
-                        <li>
-                            Import into CutWord and let it transcribe your audio
-                        </li>
-                        <li>Markers are detected automatically</li>
-                        <li>Refine or override markers in the UI</li>
-                        <li>Export an editable timeline to your NLE</li>
-                    </ol>
+                <div class="">
+                    <div
+                        class="relative flex h-full min-w-0 flex-col rounded-xl border border-b-[6px] border-b-cyan-500 bg-white break-words shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                        <div class="flex-[1_1_auto] p-10">
+                            <svg
+                                class="mb-3 size-8 text-cyan-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M12 2a10 10 0 0 1 7.38 16.75"></path>
+                                <path d="M12 6v6l4 2"></path>
+                                <path d="M2.5 8.875a10 10 0 0 0-.5 3"></path>
+                                <path d="M2.83 16a10 10 0 0 0 2.43 3.4"></path>
+                                <path
+                                    d="M4.636 5.235a10 10 0 0 1 .891-.857"
+                                ></path>
+                                <path
+                                    d="M8.644 21.42a10 10 0 0 0 7.631-.38"
+                                ></path>
+                            </svg>
+                            <h4 class="mb-2 text-xl font-medium text-slate-900">
+                                Done in Seconds
+                            </h4>
+                            <p class="mb-2 leading-7 text-gray-600">
+                                Your spoken commands turn into a
+                                professional-quality rough cut automatically.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="relative flex h-full min-w-0 flex-col rounded-xl border border-b-[6px] border-b-cyan-500 bg-white break-words shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                        <div class="flex-[1_1_auto] p-10">
+                            <svg
+                                class="mb-3 size-8 text-cyan-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    width="8"
+                                    height="5"
+                                    x="14"
+                                    y="17"
+                                    rx="1"
+                                ></rect>
+                                <path
+                                    d="M10 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v2.5"
+                                ></path>
+                                <path d="M20 17v-2a2 2 0 1 0-4 0v2"></path>
+                            </svg>
+                            <h4 class="mb-2 text-xl font-medium text-slate-900">
+                                100% Privacy
+                            </h4>
+                            <p class="mb-2 leading-7 text-gray-600">
+                                Everything runs locally on your Mac—your data
+                                stays private, always.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="relative flex h-full min-w-0 flex-col rounded-xl border border-b-[6px] border-b-cyan-500 bg-white break-words shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                        <div class="flex-[1_1_auto] p-10">
+                            <svg
+                                class="text-blue mb-3 size-8 text-cyan-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"
+                                ></path>
+                                <path d="m8 6 2-2"></path>
+                                <path d="m18 16 2-2"></path>
+                                <path
+                                    d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"
+                                ></path>
+                                <path
+                                    d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+                                ></path>
+                                <path d="m15 5 4 4"></path>
+                            </svg>
+                            <h4 class="mb-2 text-xl font-medium text-slate-900">
+                                Precision Control
+                            </h4>
+                            <p class="mb-2 leading-7 text-gray-600">
+                                Adjust IN and OUT points in real-time with an
+                                intuitive interface, perfecting your timeline
+                                effortlessly.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials -->
-        <section id="testimonials" class="px-6 py-20">
-            <div class="mx-auto max-w-4xl text-center">
-                <h2 class="mb-12 text-3xl font-bold">
-                    What Creators Are Saying
-                </h2>
-                <div class="grid gap-8 text-gray-300 md:grid-cols-2">
-                    <blockquote>
-                        "CutWord has literally halved my editing time! It's a
-                        game-changer."
-                        <br />
-                        <span class="text-cyan-400">
-                            &mdash; Alex T., Tech YouTuber
+        <!-- How It Works -->
+        <section id="howitworks" class="px-6 pb-24">
+            <h2 class="mb-3 text-3xl font-bold text-white xl:text-4xl">
+                How It Works
+            </h2>
+            <p class="lead mb-8 text-xl leading-[1.6] text-gray-200">
+                CutWord turns your recordings into effortless edits.
+            </p>
+            <div
+                class="process-wrapper line mx-[-15px] mt-[-30px] flex flex-wrap lg:mx-[-20px] xl:mx-[-35px]"
+            >
+                <div
+                    class="relative mt-[30px] w-full max-w-full flex-[0_0_auto] px-[15px] after:absolute after:top-6 after:left-[3rem] after:z-[1] after:h-px after:w-full after:border-t after:border-solid after:border-t-[rgba(164,174,198,0.2)] after:bg-inherit after:content-[''] max-lg:after:!hidden md:w-6/12 lg:w-3/12 lg:!px-[20px] xl:w-3/12 xl:!px-[35px]"
+                >
+                    <span
+                        class="icon btn btn-circle btn-lg btn-soft-primary pointer-events-none !relative z-[2] !mb-4 inline-flex h-12 w-12 items-center justify-center !rounded-[100%] !border-white !bg-white !p-0 !text-[calc(1.255rem_+_0.06vw)] leading-none !text-cyan-900 xl:!text-[1.3rem]"
+                    >
+                        <span
+                            class="number mx-auto my-0 table-cell text-center align-middle text-[1.1rem] !leading-none font-bold"
+                        >
+                            01
                         </span>
-                    </blockquote>
-                    <blockquote>
-                        "Being able to get a rough edit right after filming is
-                        incredible. Highly recommended!"
-                        <br />
-                        <span class="text-cyan-400">
-                            &mdash; Jess M., Content Creator
+                    </span>
+                    <h4 class="mb-1 text-xl font-semibold text-white">
+                        Record &amp; Command
+                    </h4>
+                    <p class="mb-0 leading-7 text-gray-200">
+                        Speak simple command words like 'new take' or 'save
+                        take' while recording.
+                    </p>
+                </div>
+                <div
+                    class="!relative !mt-[30px] w-full max-w-full flex-[0_0_auto] !px-[15px] after:absolute after:top-6 after:left-[3rem] after:z-[1] after:h-px after:w-full after:border-t after:border-solid after:border-t-[rgba(164,174,198,0.2)] after:bg-inherit after:content-[''] max-lg:after:!hidden md:w-6/12 lg:w-3/12 lg:!px-[20px] xl:w-3/12 xl:!px-[35px]"
+                >
+                    <span
+                        class="icon btn btn-circle btn-lg btn-primary pointer-events-none !relative z-[2] !mb-4 inline-flex h-12 w-12 items-center justify-center !rounded-[100%] !border-cyan-500 !bg-cyan-500 !p-0 !text-[calc(1.255rem_+_0.06vw)] leading-none !text-white hover:!border-[#3f78e0] hover:bg-[#3f78e0] hover:text-white active:border-[#3f78e0] active:bg-[#3f78e0] active:text-white disabled:border-[#3f78e0] disabled:bg-[#3f78e0] disabled:text-white xl:!text-[1.3rem]"
+                    >
+                        <span
+                            class="number mx-auto my-0 table-cell text-center align-middle text-[1.1rem] !leading-none font-bold"
+                        >
+                            02
                         </span>
-                    </blockquote>
+                    </span>
+                    <h4 class="mb-1 text-xl font-semibold text-white">
+                        Import Video
+                    </h4>
+                    <p class="mb-0 leading-7 text-gray-200">
+                        Drop your video into CutWord—it instantly extracts audio
+                        and generates transcripts.
+                    </p>
+                </div>
+                <div
+                    class="!relative !mt-[30px] w-full max-w-full flex-[0_0_auto] !px-[15px] after:absolute after:top-6 after:left-[3rem] after:z-[1] after:h-px after:w-full after:border-t after:border-solid after:border-t-[rgba(164,174,198,0.2)] after:bg-inherit after:content-[''] max-lg:after:!hidden md:w-6/12 lg:w-3/12 lg:!px-[20px] xl:w-3/12 xl:!px-[35px]"
+                >
+                    <span
+                        class="icon btn btn-circle btn-lg btn-soft-primary pointer-events-none !relative z-[2] !mb-4 inline-flex h-12 w-12 items-center justify-center !rounded-[100%] !border-white !bg-white !p-0 !text-[calc(1.255rem_+_0.06vw)] leading-none !text-cyan-900 xl:!text-[1.3rem]"
+                    >
+                        <span
+                            class="number mx-auto my-0 table-cell text-center align-middle text-[1.1rem] !leading-none font-bold"
+                        >
+                            03
+                        </span>
+                    </span>
+                    <h4 class="mb-1 text-xl font-semibold text-white">
+                        Automatic Marker Detection
+                    </h4>
+                    <p class="mb-0 leading-7 text-gray-200">
+                        CutWord identifies your commands, creating accurate
+                        IN/OUT markers.
+                    </p>
+                </div>
+                <div
+                    class="!relative !mt-[30px] w-full max-w-full flex-[0_0_auto] !px-[15px] md:w-6/12 lg:w-3/12 lg:!px-[20px] xl:w-3/12 xl:!px-[35px]"
+                >
+                    <span
+                        class="icon btn btn-circle btn-lg btn-soft-primary pointer-events-none !relative z-[2] !mb-4 inline-flex h-12 w-12 items-center justify-center !rounded-[100%] !border-white !bg-white !p-0 !text-[calc(1.255rem_+_0.06vw)] leading-none !text-cyan-900 xl:!text-[1.3rem]"
+                    >
+                        <span
+                            class="number mx-auto my-0 table-cell text-center align-middle text-[1.1rem] !leading-none font-bold"
+                        >
+                            04
+                        </span>
+                    </span>
+                    <h4 class="mb-1 text-xl font-semibold text-white">
+                        Refine &amp; Export
+                    </h4>
+                    <p class="mb-0 leading-7 text-gray-200">
+                        Review and fine-tune your segments, then one-click
+                        export to FCPXML.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- FAQ -->
-        <section id="faq" class="bg-gray-800 px-6 py-20">
-            <div class="mx-auto max-w-4xl">
-                <h2 class="mb-10 text-center text-3xl font-bold">
+        <section id="faq" class="rounded-2xl bg-white px-12 py-20">
+            <div class="flex flex-col items-center">
+                <h2 class="mb-10 text-3xl font-bold text-slate-900">
                     Frequently Asked Questions
                 </h2>
-                <div class="space-y-6 text-gray-300">
-                    <div>
-                        <strong>
-                            Can I use CutWord with any video editor?
-                        </strong>
-                        <p>
-                            Currently supports Final Cut Pro and DaVinci
-                            Resolve. More coming soon.
-                        </p>
+                <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+                    <div class="space-y-6 text-gray-700">
+                        <div>
+                            <strong>
+                                Does CutWord edit my original video files?
+                            </strong>
+                            <p class="mt-2">
+                                No. CutWord creates metadata-only timelines,
+                                preserving your original footage intact.
+                            </p>
+                        </div>
+                        <div>
+                            <strong>
+                                Which editing software does CutWord support?
+                            </strong>
+                            <p class="mt-2">
+                                CutWord exports a FCPXML file that can be
+                                imported into Final Cut Pro or DaVinci Resolve.
+                            </p>
+                        </div>
+                        <div>
+                            <strong>
+                                What framerates and resolutions does CutWord
+                                support?
+                            </strong>
+                            <p class="mt-2">
+                                CutWord supports all common framerates and
+                                resolutions. The exported FCPXML timeline will
+                                match the original frame rate and resolution of
+                                the imported video.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <strong>Is my media altered?</strong>
-                        <p>
-                            No. CutWord only exports metadata. Your original
-                            video is untouched.
-                        </p>
-                    </div>
-                    <div>
-                        <strong>Can I customize command words?</strong>
-                        <p>
-                            Yes, you can edit your IN/OUT phrases in the
-                            settings menu.
-                        </p>
-                    </div>
-                    <div>
-                        <strong>
-                            Does it support variable frame rate recordings?
-                        </strong>
-                        <p>
-                            Yes. We account for frame-rate and round where
-                            needed for NLE compatibility.
-                        </p>
+                    <div class="space-y-6 text-gray-700">
+                        <div>
+                            <strong>
+                                Do I need ongoing internet connectivity to use
+                                CutWord?
+                            </strong>
+                            <p class="mt-2">
+                                No. Once the Speech to Text model has been
+                                downloaded, CutWord runs entirely offline,
+                                ensuring complete privacy.
+                            </p>
+                        </div>
+                        <div>
+                            <strong>Can I customize the command words?</strong>
+                            <p class="mt-2">
+                                Yes, you can edit your IN/OUT phrases in the
+                                settings menu.
+                            </p>
+                        </div>
+                        <div>
+                            <strong>What Mac hardware do I need?</strong>
+                            <p class="mt-2">
+                                CutWord requires a Mac with an Apple M1 chip or
+                                newer.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,30 +471,30 @@
 
         <!-- Final CTA -->
         <section id="download" class="py-20 text-center">
-            <h2 class="mb-6 text-4xl font-bold">Ready to Save Time Editing?</h2>
+            <h2 class="mb-12 text-4xl font-bold">
+                Ready to Save Time Editing?
+            </h2>
             <a
-                href="#"
-                class="rounded-lg bg-cyan-400 px-8 py-4 text-xl font-semibold text-gray-900 hover:bg-cyan-300"
+                href="https://testflight.apple.com/join/2BdJhDUc"
+                target="_blank"
+                class="rounded-lg bg-cyan-400 px-8 py-4 text-xl font-semibold text-slate-900 hover:bg-cyan-300"
             >
-                Get CutWord for Free
+                Get CutWord Now!
             </a>
         </section>
 
         <!-- Footer -->
         <footer
-            class="border-t border-gray-800 bg-gray-900 py-10 text-sm text-gray-500"
+            class="border-t border-gray-800 bg-slate-900 py-10 text-sm text-gray-500"
         >
             <div
-                class="mx-auto flex max-w-6xl flex-col justify-between gap-6 px-6 md:flex-row"
+                class="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-6 md:flex-row"
             >
                 <div class="flex items-center gap-3">
-                    <img src="cutword.png" class="h-6 w-6" />
                     <span>© 2025 CutWord. All rights reserved.</span>
                 </div>
                 <div class="flex gap-6">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Twitter</a>
+                    <a href="/privacy">Privacy Policy</a>
                 </div>
             </div>
         </footer>
