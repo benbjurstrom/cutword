@@ -6,10 +6,10 @@
         <title>CutWord – Edit while you shoot.</title>
 
         <!-- Primary Meta Tags -->
-        <meta name="title" content="CutWord – Rough Cuts, Instantly" />
+        <meta name="title" content="CutWord - Edit while you shoot." />
         <meta
             name="description"
-            content="Cutword is a Mac app that transforms commands spoken during recording into instant timeline edits for Final Cut Pro and DaVinci Resolve."
+            content="A MacOS application that transforms commands spoken during recording into instant timeline edits."
         />
 
         <!-- Canonical URL -->
@@ -24,7 +24,7 @@
         <meta property="og:title" content="CutWord – Edit while you shoot." />
         <meta
             property="og:description"
-            content="Cutword is a Mac app that transforms commands spoken during recording into instant timeline edits for Final Cut Pro and DaVinci Resolve."
+            content="A MacOS application that transforms commands spoken during recording into instant timeline edits."
         />
         <meta property="og:image" content="./ogimage.webp" />
 
@@ -37,7 +37,7 @@
         />
         <meta
             property="twitter:description"
-            content="Edit while you shoot. Commands spoken during recording are transformed into instant timeline edits for Final Cut Pro and DaVinci Resolve."
+            content="A MacOS application that transforms commands spoken during recording into instant timeline edits."
         />
         <meta property="twitter:image" content="./ogimage.webp" />
 
@@ -50,12 +50,12 @@
         <!-- 180×180 -->
     </head>
     <body
-        class="font-manrope mx-auto max-w-7xl bg-slate-900 px-4 text-white antialiased lg:subpixel-antialiased"
+        class="font-manrope mx-auto max-w-7xl bg-slate-900 text-white antialiased lg:subpixel-antialiased w-full"
     >
         <!-- Navbar -->
-        <header class="sticky top-0 z-50 bg-slate-900">
+        <header class="sticky top-0 z-50 bg-slate-900 w-full px-6 sm:px-10">
             <div
-                class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6"
+                class="mx-auto flex max-w-7xl items-center justify-between py-6"
             >
                 <a href="/" class="flex items-center gap-2 text-white">
                     <svg
@@ -93,8 +93,9 @@
         </header>
 
         <!-- Hero -->
-        <section class="px-6 pt-10 pb-20">
-            <div class="grid grid-cols-12 items-start gap-8">
+        <section class="pt-10 pb-20 px-6 sm:px-10">
+            <div class="max-w-7xl mx-autooverflow-hidden">
+                <div class="grid grid-cols-12 items-start gap-4 lg:gap-8">
                 <div
                     class="order-2 col-span-12 flex max-w-full flex-col items-start justify-center lg:order-none lg:col-span-6 lg:items-start lg:text-left xl:text-left"
                 >
@@ -128,15 +129,14 @@
                     </div>
                 </div>
                 <div
-                    class="col-span-12 flex justify-center lg:col-span-6"
+                    class="col-span-12 flex lg:col-span-6 justify-center items-center overflow-hidden"
                 >
                     <img
                         alt="Screenshot of CutWord Mac App"
                         loading="eager"
-                        width="1416"
-                        height="1676"
+                        width="1280"
+                        height="1540"
                         decoding="async"
-                        data-nimg="1"
                         src="./hero.webp"
                         sizes="(min-width: 1024px) 32rem, 16rem"
                         srcset="
@@ -145,16 +145,17 @@
                             img/hero-640w.webp   640w,
                             img/hero-768w.webp   768w,
                             img/hero-960w.webp   960w,
-                            img/hero-1416w.webp 1416w
+                            img/hero-1280w.webp 1280w
                         "
-                        class="max-h-[600px] object-contain"
+                        class="max-h-[600px] w-full max-w-full object-contain"
                     />
                 </div>
             </div>
+        </div>
         </section>
 
         <!-- Features -->
-        <section id="features" class="px-6 pb-24">
+        <section id="features" class="px-6 pb-24 sm:px-10">
             <div
                 class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:gap-8 xl:grid-cols-4"
             >
@@ -311,7 +312,7 @@
         </section>
 
         <!-- How It Works -->
-        <section id="howitworks" class="px-6 pb-24">
+        <section id="howitworks" class="px-6 sm:px-10 pb-24">
             <h2 class="mb-3 text-3xl font-bold text-white xl:text-4xl">
                 How It Works
             </h2>
@@ -402,7 +403,7 @@
         </section>
 
         <!-- FAQ -->
-        <section id="faq" class="rounded-2xl bg-white px-12 py-20">
+        <section id="faq" class="rounded-2xl bg-white px-12 py-20 mx-6 sm:mx-10">
             <div class="flex flex-col items-center">
                 <h2 class="mb-10 text-3xl font-bold text-slate-900">
                     Frequently Asked Questions

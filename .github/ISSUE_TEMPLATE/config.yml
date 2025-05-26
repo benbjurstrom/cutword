@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support Request
+    url: mailto:support@cutword.com
+    about: For account, licensing, or general support questions
+  - name: Community Discussions
+    url: https://github.com/benbjurstrom/cutword/discussions
+    about: For general discussions, questions, and ideas
